@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Objetivos - TamalCoin</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #fcd535;
+      --dark: #1e1e1e;
+      --accent: #ff9900;
+      --bg: #121212;
+      --text-light: #fff;
+      --text-muted: #bbb;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: var(--bg);
+      color: var(--text-light);
+    }
+
+    header {
+      background: linear-gradient(90deg, #fcd535, #ffcc00);
+      color: var(--dark);
+      text-align: center;
+      padding: 50px 20px 30px;
+    }
+
+    header h1 {
+      font-family: 'Bungee', cursive;
+      font-size: 3em;
+      margin: 0;
+      color: #000;
+    }
+
+    header p {
+      font-size: 1.2em;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .logo {
+      width: 120px;
+      margin-bottom: 20px;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    nav {
+      background-color: #000;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav a {
+      color: var(--primary);
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 1em;
+    }
+
+    nav a:hover {
+      color: var(--text-light);
+    }
+
+    .marquee {
+      background: #111;
+      color: var(--accent);
+      padding: 10px;
+      font-weight: bold;
+      font-size: 1em;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    .marquee span {
+      display: inline-block;
+      animation: marquee 20s linear infinite;
+    }
+
+    @keyframes marquee {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    h2 {
+      color: var(--primary);
+      font-family: 'Bungee', cursive;
+      margin-bottom: 20px;
+    }
+
+    .objetivo-card {
+      background: #1e1e1e;
+      padding: 30px;
+      border-radius: 15px;
+      margin-bottom: 30px;
+      border-left: 5px solid var(--primary);
+    }
+
+    .objetivo-card h3 {
+      color: var(--accent);
+      margin-top: 0;
+    }
+
+    .objetivo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+    }
+
+    .objetivo-item {
+      background: #252525;
+      padding: 20px;
+      border-radius: 10px;
+      border-bottom: 3px solid var(--primary);
+    }
+
+    .objetivo-item h4 {
+      color: var(--primary);
+      margin-top: 0;
+    }
+
+    button {
+      background: var(--primary);
+      color: #000;
+      border: none;
+      padding: 10px 20px;
+      font-weight: bold;
+      border-radius: 30px;
+      cursor: pointer;
+      font-size: 1em;
+      margin-top: 15px;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    button:hover {
+      background: #fff;
+      transform: translateY(-3px);
+    }
+
+    ul {
+      padding-left: 20px;
+      color: var(--text-muted);
+    }
+
+    footer {
+      background: #000;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.85em;
+      color: var(--text-muted);
+    }
+
+    @media screen and (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .logo {
+        width: 90px;
+      }
+
+      h1 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="tamalcoin.png" alt="TamalCoin Logo" class="logo" />
+    <h1>OBJETIVOS TAMALCOIN</h1>
+    <p>Porque no solo queremos tu dinero... ¡queremos revolucionar el mundo del maíz! 🌽🚀</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="Mision.html">Misión</a></li>
+      <li><a href="Vision.html">Visión</a></li>
+      <li><a href="Objetivo.html">Objetivo</a></li>
+      <li><a href="Comofunciona.html">¿Cómo Funciona?</a></li>
+    </ul>
+  </nav>
+
+  <div class="marquee">
+    <span>🔥 ¡OBJETIVOS CLAROS COMO EL AGUA PARA LOS TAMALES! 🔥 | 🌽 1 TAMALCOIN = 1 SONRISA | 🚀 LLEVAR EL MAÍZ A MARTE | 💰 HACER RICOS A LOS TAMALEROS |</span>
+  </div>
+
+  <div class="container">
+    <div class="objetivo-card">
+      <h2> Nuestros Objetivos Principales</h2>
+      <p>En TamalCoin no nos conformamos con poco, queremos dominar el universo crypto-tamalero con estos objetivos claros:</p>
+    </div>
+
+    <div class="objetivo-grid">
+      <div class="objetivo-item">
+        <h4> Democratizar los tamales</h4>
+        <p>Que hasta el más humilde estudiante pueda comprar tamales sin llorar por el precio, usando nuestra criptomoneda.</p>
+      </div>
+      <div class="objetivo-item">
+        <h4> Blockchain tamalero</h4>
+        <p>Crear la primera red descentralizada de tamaleros verificados (que sí den su ración decente de carne).</p>
+      </div>
+      <div class="objetivo-item">
+        <h4> Valorización constante</h4>
+        <p>Que 1 TamalCoin siempre equivalga a al menos 1/8 de tamal (ajustado por inflación tamalera).</p>
+      </div>
+      <div class="objetivo-item">
+        <h4> Expansión global</h4>
+        <p>Llevar los tamales a lugares donde ni saben qué es el maíz (sí, estamos mirándote, Europa).</p>
+      </div>
+      <div class="objetivo-item">
+        <h4> Educación crypto-tamalera</h4>
+        <p>Enseñar a las abuelas a minar TamalCoins mientras cocinan (proof-of-work = proof-of-tamal).</p>
+      </div>
+      <div class="objetivo-item">
+        <h4> Tamales espaciales</h4>
+        <p>Que el primer alimento que se coma en Marte sea un tamal pagado con TamalCoin (take that, Elon).</p>
+      </div>
+    </div>
+
+    <div class="objetivo-card">
+      <h3> Objetivos a Corto Plazo</h3>
+      <ul>
+        <li>✅ Que al menos 100 tamaleros acepten TamalCoin en CDMX</li>
+        <li>✅ Lanzar nuestra app "TamalPay" (con opción para pedir salsa extra)</li>
+        <li>✅ Que TamalCoin aparezca en CoinMarketCap entre los "meme coins más calientes"</li>
+      </ul>
+    </div>
+
+    <div class="objetivo-card">
+      <h3> Objetivos a Largo Plazo</h3>
+      <ul>
+        <li> TamalCoin como moneda oficial en la Luna (los tamales lunares serán nuestro producto estrella)</li>
+        <li> Reemplazar el FOBAPROA con el TAMALPROA (Fondo de Protección Tamalero)</li>
+        <li> Que el precio del tamal se cotice en bolsa como el petróleo</li>
+        <li> Establecer rutas intergalácticas de distribución de tamales</li>
+      </ul>
+    </div>
+
+    <div style="text-align: center; margin-top: 40px;">
+      <h2>¿Quieres ser parte de esta revolución tamalera?</h2>
+      <a href="compra.html"><button>¡COMPRAR AHORA!</button></a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 TamalCoin - Porque el futuro es tamalero y descentralizado. 🌮💎 | #ToTheMolcajete</p>
+  </footer>
+
+</body>
+</html>
